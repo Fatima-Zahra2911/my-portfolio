@@ -1,0 +1,625 @@
+body {
+  background-color: #000000;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  background-color: transparent;
+  color: rgb(214, 211, 211);
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.pages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 470px;
+}
+
+.pages a {
+  color: rgb(214, 211, 211);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.name {
+  margin-left: 10px;
+  margin-right: 700px;
+  font-size: 20px;
+}
+
+.nm {
+  display: inline;
+  color: rgb(215, 60, 132);
+  font-size: 1.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.pages a:hover {
+  text-decoration: underline;
+  color: aliceblue;
+}
+
+.quote {
+  text-align: right;
+  margin-top: -20px;
+  margin-right: 50px;
+  color: rgb(214, 211, 211);
+  background-color: none;
+}
+
+.section1 {
+  display: flex;
+  background-image: url("images/background_image2.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 630px;
+  justify-content: center;
+  align-items: center;
+}
+
+.b1 {
+  padding-left: 0;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.myname {
+  font-size: 50px;
+  color: rgb(215, 60, 132);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bolder;
+}
+
+.my {
+  font-size: 52px;
+  margin: 20px;
+}
+
+.typing {
+  font-size: 30px;
+  margin: 4px;
+}
+
+.section2 {
+  background-image: url("images/bg.png");
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+}
+
+.abt {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.me {
+  color: rgb(215, 60, 132);
+}
+
+summary {
+  cursor: pointer;
+}
+
+.link a {
+  color: rgb(215, 60, 132);
+  font-size: 1.2rem;
+}
+
+.link a:hover {
+  color: white;
+}
+
+.section3 {
+  padding-top: 70px;
+}
+
+.project-section {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #000000;
+  position: relative;
+  top: -20px;
+}
+
+.box {
+  margin-bottom: 15px;
+  height: 200px;
+  width: 18%;
+  margin: 30px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 7px;
+  filter: drop-shadow(1px 1px 5px pink);
+}
+
+.box:hover {
+  background-color: #878787;
+}
+
+.box-img {
+  height: 200px;
+  background-size: cover;
+}
+
+.box-content {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.heading {
+  color: rgb(215, 60, 132);
+  font-size: 20px;
+}
+
+.project-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 83%;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 3%;
+}
+
+.box:hover .project-overlay {
+  opacity: 1;
+}
+
+.boxes-content {
+  text-align: center;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.boxes-content h3 {
+  font-size: 25px;
+  margin: 30px;
+}
+
+.society-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.box:hover .society-overlay {
+  opacity: 1;
+}
+
+.section4 {
+  background-image: url("images/bg.png");
+  padding-left: 30px;
+  padding-top: 70px;
+}
+
+.date {
+  font-weight: bold;
+  font-size: 15px;
+  color: rgb(215, 60, 132);
+}
+
+.edu {
+  font-size: 20px;
+  color: rgb(214, 211, 211);
+}
+
+.skills-list {
+  display: grid;
+  gap: 0.5px;
+}
+
+.skills-item .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: 10px;
+}
+
+.skills-title,
+.skills-data {
+  color: white;
+  font-size: 1rem;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+}
+
+.skills-progress-box {
+  background-color: white;
+  height: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.skills-progress {
+  background-color: rgb(226, 152, 186);
+  height: 100%;
+  border-radius: inherit;
+}
+
+/* Section Titles */
+.abt {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.me {
+  color: rgb(215, 60, 132);
+}
+
+/* Experience Section */
+.section5 {
+  background: url("images/bg.png");
+  padding: 70px 30px;
+}
+
+.experience-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.experience-box {
+  width: 25%;
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  margin: 17px;
+  border-radius: 10px;
+  filter: drop-shadow(1px 1px 5px pink);
+}
+
+.experience-box:hover {
+  background-color: rgb(63, 63, 63);
+}
+
+.experience-box h3 {
+  color: rgb(215, 60, 132);
+  font-size: 24px;
+}
+
+.experience-box p {
+  font-size: 16px;
+}
+
+/* Contact Section Styling */
+.section6 {
+  padding-top: 70px;
+  background: url("images/bg.png");
+  text-align: center;
+  color: white;
+}
+
+.abt {
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.contact-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 0px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social-links ul li {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.social-icon:hover {
+  color: #ff88b3;
+}
+
+.success-message {
+  color: #4caf50;
+}
+
+.error-message {
+  color: #ff4d4d;
+}
+
+.cntct {
+  height: 300px;
+  width: 300px;
+}
+
+footer {
+  text-align: right;
+  padding-top: 85px;
+}
+
+/* Academic Achievements Section */
+.section7 {
+  padding: 10px 20px;
+  background: url("images/bg.png");
+}
+
+.academic-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.achievement-box {
+  width: 50%;
+  background-color: #222;
+  color: #fff;
+  padding: 6px;
+  margin: 12px;
+  border-radius: 10px;
+  filter: drop-shadow(1px 1px 5px pink);
+}
+
+.achievement-box:hover {
+  background-color: rgb(63, 63, 63);
+}
+
+.achievement-box h3 {
+  color: rgb(215, 60, 132);
+  font-size: 20px;
+}
+
+.back {
+  cursor: pointer;
+  font-size: 15px;
+  color: white;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .hamburger-menu {
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+  }
+  .pages {
+    display: none; /* Hide default pages for smaller screens */
+  }
+  .navbar-active {
+    display: flex; /* Show links when active */
+    flex-direction: column; /* Stack links vertically */
+    justify-content: flex-start; /* Align items at the start */
+    align-items: flex-start; /* Align items to the left */
+    color: #fff; /* White text */
+    font-size: 30px; /* Adjusted font size */
+    height: auto; /* Height auto to fit content */
+    width: 200px; /* Set a specific width for the sidebar */
+    padding: 20px; /* Optional: Add padding for aesthetics */
+    z-index: 1000; /* Ensure it's above other elements */
+  }
+  .myname {
+    font-size: 40px;
+  }
+
+  .my {
+    font-size: 42px;
+  }
+.quote{
+  display: none;
+}
+  .typing {
+    font-size: 28px;
+  }
+
+  .project-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 80%;
+  }
+
+  .experience-box {
+    width: 80%;
+  }
+
+  .achievement-box {
+    width: 80%;
+  }
+}
+@media (max-width: 947px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .hamburger-menu {
+    display: block;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .pages {
+    display: none; /* Hide default pages for smaller screens */
+  }
+  .navbar-active {
+    display: flex; /* Show links when active */
+    flex-direction: column; /* Stack links vertically */
+    justify-content: flex-start; /* Align items at the start */
+    align-items: flex-start; /* Align items to the left */
+    color: #fff; /* White text */
+    font-size: 30px; /* Adjusted font size */
+    height: auto; /* Height auto to fit content */
+    width: 200px; /* Set a specific width for the sidebar */
+    padding: 20px; /* Optional: Add padding for aesthetics */
+    z-index: 1000; /* Ensure it's above other elements */
+  }
+
+  .myname {
+    font-size: 40px;
+  }
+
+  .my {
+    font-size: 42px;
+  }
+.quote{
+  display: none;
+}
+  .typing {
+    font-size: 28px;
+  }
+
+  .project-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 80%;
+  }
+
+  .experience-box {
+    width: 80%;
+  }
+
+  .achievement-box {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .hamburger-menu {
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+  }
+  .pages {
+    display: none; /* Hide default pages for smaller screens */
+  }
+  .navbar-active {
+    display: flex; /* Show links when active */
+    flex-direction: column; /* Stack links vertically */
+    justify-content: flex-start; /* Align items at the start */
+    align-items: flex-start; /* Align items to the left */
+    color: #fff; /* White text */
+    font-size: 30px; /* Adjusted font size */
+    height: auto; /* Height auto to fit content */
+    width: 200px; /* Set a specific width for the sidebar */
+    padding: 20px; /* Optional: Add padding for aesthetics */
+    z-index: 1000; /* Ensure it's above other elements */
+  }
+ .quote{
+  display: none;
+ }
+  .section1 {
+    height: 500px;
+  }
+
+  .myname {
+    font-size: 36px;
+  }
+
+  .my {
+    font-size: 36px;
+  }
+
+  .typing {
+    font-size: 24px;
+  }
+
+  .box {
+    width: 90%;
+  }
+
+  .experience-box,
+  .achievement-box {
+    width: 90%;
+  }
+
+  .social-links {
+    flex-direction: column;
+  }
+
+  .social-links ul {
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .myname {
+    font-size: 26px;
+  }
+
+  .my {
+    font-size: 26px;
+  }
+
+  .typing {
+    font-size: 16px;
+  }
+
+  .quote {
+    display: none;
+  }
+
+  .section6 {
+    padding: 50px 10px;
+  }
+
+  .contact-flex {
+    flex-direction: column;
+  }
+}
+
